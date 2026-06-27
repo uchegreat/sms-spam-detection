@@ -1,44 +1,90 @@
 # SMS Spam Detection
 
-SMS spam detection model built with Python and machine learning.
+A machine learning project that classifies SMS messages as spam or ham (not spam).
 
 ## Overview
 
-This repository contains code and resources for training and evaluating a machine learning model to classify SMS messages as spam or ham (not spam). The project covers data preprocessing, feature extraction, model training, evaluation, and basic inference.
+This project uses natural language processing and machine learning to detect spam messages in SMS text. It takes a message as input and predicts whether it is spam or legitimate.
 
-## Contents
+## Features
 
-- data/: Datasets and data processing scripts
-- src/: Source code for training, evaluation, and inference
-- notebooks/: Exploratory notebooks
-- models/: Saved trained models
+- SMS message classification.
+- Text preprocessing and cleaning.
+- Machine learning model training.
+- Prediction on custom messages.
+- Easy-to-read project structure for GitHub.
 
-## Getting Started
+## Project Structure
 
-1. Clone the repository:
+```text
+sms-spam-detection/
+├── data/
+├── notebooks/
+├── models/
+├── src/
+├── README.md
+└── requirements.txt
+```
 
-   git clone https://github.com/uchegreat/sms-spam-detection.git
+## Requirements
 
-2. Create and activate a Python virtual environment (recommended):
+- Python 3.x
+- pandas
+- numpy
+- scikit-learn
+- nltk
+- matplotlib
+- seaborn
 
-   python -m venv .venv
-   source .venv/bin/activate  # macOS/Linux
-   .venv\Scripts\activate     # Windows
+## Installation
 
-3. Install dependencies:
+Clone the repository:
+```bash
+git clone https://github.com/your-username/sms-spam-detection.git
+cd sms-spam-detection
+```
 
-   pip install -r requirements.txt
+Create a virtual environment:
+```bash
+python -m venv venv
+```
 
-4. Prepare the data and run training scripts in `src/`.
+Activate it:
+
+On Windows:
+```bash
+venv\Scripts\activate
+```
+
+On macOS/Linux:
+```bash
+source venv/bin/activate
+```
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+If you are using a notebook, open it and run the cells step by step.
+
+If you are using a Python script:
+```bash
+python app.py
+```
 
 ## Dataset
 
-A common dataset for SMS spam detection is the "SMS Spam Collection" dataset. Place datasets in the `data/` directory and update data paths in the scripts.
+The model is trained on an SMS spam dataset containing labeled messages as spam or ham.
 
-## Contributing
+## Author
 
-Contributions are welcome. Please open issues or pull requests for bug fixes and enhancements.
+UCHE GREAT.
 
-## License
 
-Specify a license for the project (e.g., MIT).
+
+## Author
+
+Your Name
